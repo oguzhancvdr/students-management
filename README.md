@@ -10,7 +10,7 @@
 git clone https://github.com/oguzhancvdr/students-management
 ```
 
-### 1. Create a `.env` file in the project root directory.
+## 1. Create a `.env` file in the project root directory.
 
 <details>
     <summary>.env</summary>
@@ -22,7 +22,7 @@ git clone https://github.com/oguzhancvdr/students-management
     TIME_ZONE=Europe/Istanbul
 </details>
 
-## 1.1 in this file
+### 1.1 in this file
 - SECRET_KEY can be generated with the following command.
 
 ```python
