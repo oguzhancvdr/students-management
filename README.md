@@ -8,7 +8,6 @@
 ### 0. Clone the project
 ```bash
 git clone https://github.com/oguzhancvdr/students-management
-cd bootcamp
 ```
 
 ### 1. Create a `.env` file in the project root directory.
