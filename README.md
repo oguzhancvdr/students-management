@@ -5,7 +5,7 @@
 
 # Installation
 
-### 0. Clone the project
+## 0. Clone the project
 ```bash
 git clone https://github.com/oguzhancvdr/students-management
 ```
@@ -22,7 +22,7 @@ git clone https://github.com/oguzhancvdr/students-management
     TIME_ZONE=Europe/Istanbul
 </details>
 
-### 1.1 in this file
+## 1.1 in this file
 - SECRET_KEY can be generated with the following command.
 
 ```python
@@ -32,7 +32,7 @@ python - c "from django.core.management.utils import get_random_secret_key; prin
 
 - The parameters in the DATABASE_URL variable in the .env file are the superuser username and password, the IP and port specified for the server, and the database name, respectively.
 
-### 2. Start the project.
+## 2. Start the project.
 ```bash
 # create a virtual environment
 > python -m venv env
