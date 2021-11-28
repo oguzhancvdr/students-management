@@ -54,4 +54,4 @@ python - c "from django.core.management.utils import get_random_secret_key; prin
 ```
 
 
-[Home Page](http://127.0.0.1:8000/)# django-crud
+[Home Page](http://127.0.0.1:8000/)
