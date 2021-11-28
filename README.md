@@ -7,7 +7,7 @@
 
 ### 0. Clone the project
 ```bash
-git clone https://github.com/upy/bootcamp
+git clone https://github.com/oguzhancvdr/students-management
 cd bootcamp
 ```
 
