@@ -18,3 +18,7 @@ class Students(models.Model):
     gender = models.CharField(max_length=15, choices=GENDERS, verbose_name=_('genders'))
     number = models.PositiveIntegerField(verbose_name=_('number'), )
     image = models.ImageField(verbose_name=_('image'), upload_to='students/%Y/%m/%d/', default='students/avatar.png')
+
+    class Meta:
+        verbose_name = _("student")
+        verbose_name_plural = _("students")
