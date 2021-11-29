@@ -22,3 +22,6 @@ class Students(models.Model):
     class Meta:
         verbose_name = _("student")
         verbose_name_plural = _("students")
+
+    def __str__(self):
+        return f"{self.first_name[0:1]}{self.last_name[0:1]}{self.number}- {self.first_name}"
