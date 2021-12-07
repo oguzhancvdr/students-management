@@ -1,0 +1,29 @@
+{% extends 'partials/_base.html' %}
+
+{% block title %}
+    Student Detail
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="card my-3" style="width: 18rem;">
+  <img src="{{ student.image.url }}" class="card-img-top" alt="{{student.first_name}}'s picture">
+  <div class="card-body">
+    <h5 class="card-title">Student Detail</h5>
+    <p class="card-text">{{ student.first_name }} {{ student.last_name }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ student.email }}</li>
+    <li class="list-group-item">{{ student.phone }}</li>
+    <!-- <li class="list-group-item">{{ student.gender }}</li> -->
+    <li class="list-group-item">{{ student.number }}</li>
+  </ul>
+  <div class="card-body">
+    <a href="{% url 'students' %}" class="card-link">Home</a>
+    <a href="{% url 'edit' student.id %}" class="card-link">Edit</a>
+    <a href="{% url 'delete' student.id %}" class="card-link">Delete</a>
+  </div>
+</div>
+
+{% endblock content %}
