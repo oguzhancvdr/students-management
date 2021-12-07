@@ -1,0 +1,55 @@
+{% extends 'partials/_base.html' %}
+
+{% block title %}
+Create Student
+{% endblock title %}
+
+{% block content %}
+
+
+<h2 class="text-center mt-3">{% if 'edit/' in request.path %} Update Student {% else %} Create Student {% endif %}</h2>
+
+<form class="row g-3 mt-5" action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  
+  <div class="col-md-6">
+    <label for="name" class="form-label">Name</label>
+    {{ form.first_name }}
+  </div>
+  <div class="col-md-6">
+    <label for="surname" class="form-label">Surname</label>
+    {{ form.last_name }}
+  </div>
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email</label>
+    {{ form.email }}
+  </div>
+  <div class="col-md-6">
+    <label for="phone" class="form-label">Phone</label>
+    {{ form.phone }}
+  </div>
+  <div class="col-md-6">
+    <label for="gender" class="form-label">Gender</label>
+    {{ form.gender }}
+  </div>
+  <div class="col-md-6">
+    <label for="studentNumber" class="form-label">Student No</label>
+    {{ form.number }}
+  </div>
+
+  <div class="col-md-6">
+    {{form.media}}
+    <label for="image" class="form-label">image</label>
+    {{ form.image }}
+  </div>
+  
+  <div class="col-12">
+    <input type="submit" value="{% if 'edit/' in request.path %} Update {% else %} Create {% endif %}" class="btn btn-outline-secondary">
+    <button type="button" class="btn btn-primary">
+      <a style="text-decoration: none; color: #fff;" href="{%url 'students' %}">Home</a>
+    </button>
+  </div>
+</form>
+
+
+{% endblock content %}
